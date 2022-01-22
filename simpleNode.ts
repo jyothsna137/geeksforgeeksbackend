@@ -6,4 +6,4 @@ if(request.url === "/a") response.write("api a is invoked");
   else response.write("api is not found");
 response.end();
 });
-app.listen(4000, () => console.log("simple node server created"));
+app.listen(process.env.PORT || 3000, () => console.log("simple node server created"));
